@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/LightSalmon"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Заполните данные"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="117dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonMan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Мужчина"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:theme="@style/MyRadioButton"
+            android:minHeight="48dp"
+            android:minWidth="48dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonWomen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Женщина"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:theme="@style/MyRadioButton"
+            android:minHeight="48dp"
+            android:minWidth="48dp"/>
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/weight"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            android:id="@+id/etHeight"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/height"
+            android:inputType="number"
+            android:layout_marginTop="5dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            android:id="@+id/etStrenght"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/strenght"
+            android:inputType="number"
+            android:layout_marginTop="5dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/amount"
+            android:inputType="number"
+            android:layout_marginTop="5dp"
+            android:paddingStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            android:id="@+id/etTime"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/time"
+            android:inputType="number"
+            android:layout_marginTop="5dp"
+            android:paddingStart="10dp"
+            android:background="@drawable/edit_text_background" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCalc"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background"
+            android:text="@string/calculate" />
+    </LinearLayout>
+
+</RelativeLayout>

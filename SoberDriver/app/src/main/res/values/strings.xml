@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SoberDriver</string>
+    <string name="Me">Разработчик: Кривошеев Николай, группа РИБО-04-21</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="enterButton">Войти</string>
+    <string name="enterText">Вход в приложение</string>
+    <string name="weight">вес(кг)</string>
+    <string name="height">рост(см)</string>
+    <string name="strenght">крепость напитка(%)</string>
+    <string name="amount">выпито(мл.)</string>
+    <string name="time">времени прошло(ч.)</string>
+    <string name="calculate">Расчитать</string>
+</resources>
